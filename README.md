@@ -14,8 +14,8 @@ To enforce consistent role and permission naming across projects/plugins, we def
 spacechunks.<plugin>.<components>.<permission>
 ```
 
-All permission should be Kebab Case prefixed with `spacechunks.`. Role names should simply be in Kebap Case. Prefer adjectives 
-over nouns, when choosing names for permissions i.e. `spacechunks.plugin.enabled` instead of `spacechunks.plugin.enable`. 
+All permission should be Kebab Case, prefixed with `spacechunks.`. Role names should simply be in Kebap Case. Prefer adjectives 
+over nouns, when choosing names for permissions e.g. `spacechunks.plugin.enabled` instead of `spacechunks.plugin.enable`. 
 Only use letters found in the English alphabet.
 
 For example:
