@@ -14,9 +14,9 @@ To enforce consistent permission naming across projects/plugins, we define the f
 spacechunks.<plugin>.<components>.<permission>
 ```
 
-All permission should be all-lowercase prefixed with `spacechunks.`. If the words should be concatenated using `-` e.g. 
-`can-use`. Prefer adjectives over nouns, when choosing names for permissions i.e. `spacechunks.plugin.enabled` instead 
-of `spacechunks.plugin.enable`. Only use letters found in the English alphabet.
+All permission should be Kebab Case prefixed with `spacechunks.`. Prefer adjectives over nouns, when choosing names for
+permissions i.e. `spacechunks.plugin.enabled` instead of `spacechunks.plugin.enable`. Only use letters found in the English 
+alphabet.
 
 For example:
 
