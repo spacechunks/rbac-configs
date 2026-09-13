@@ -24,6 +24,7 @@ For example:
 ```
 spacechunks.lobby.chunk-viewer.enabled
 spacechunks.party.kick-member
+spacechunks.lobby.matchmaking.private.enabled
 ```
 
 **BAD**
