@@ -1,0 +1,4 @@
+roles:
+  - name: example-role
+    permissions:
+      - spacechunks.example-plugin.some-permission
