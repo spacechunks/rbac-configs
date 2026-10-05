@@ -2,3 +2,4 @@ roles:
   - name: default
     permissions:
       - spacechunks.example-plugin.some-permission
+      - spacechunks.example-plugin.some-permission3
