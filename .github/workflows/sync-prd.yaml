@@ -2,7 +2,7 @@ name: sync-prd
 on:
   push:
     branches:
-      - frg/test
+      - main
 jobs:
   sync:
     environment: prod
