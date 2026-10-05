@@ -4,5 +4,5 @@ cd synctool
 
 for f in $1/*
 do
-  go run main.go plan $f
+  go run main.go apply $f -y
 done
