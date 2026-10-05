@@ -1,0 +1,25 @@
+name: sync-prd
+on:
+  push:
+    branches:
+      - main
+jobs:
+  sync:
+    environment: prod
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-go@v7
+        with:
+          go-version: 1.27
+      - name: sync prd
+        env:
+          LP_API_URL: ${{ secrets.LP_API_URL }}
+          LP_TOKEN_URL: ${{ secrets.LP_TOKEN_URL }}
+          LP_CLIENT_ID: ${{ secrets.LP_CLIENT_ID }}
+          LP_CLIENT_SECRET: ${{ secrets.LP_CLIENT_SECRET }}
+          LP_SCOPE: ${{ secrets.LP_SCOPE }}
+        run: |
+          ./scripts/sync.sh ../configs/prd
